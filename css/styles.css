@@ -436,6 +436,12 @@ address {
 		padding: 72px 16px 24px 16px;
 	}
 }
+@media screen and (max-width: 393px) {
+	.modal {
+		width: 320px;
+		padding: 72px 16px 24px 16px;
+	}
+}
 .btn-close {
 	position: absolute;
 	top: 24px;
