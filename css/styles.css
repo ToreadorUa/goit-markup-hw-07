@@ -352,7 +352,6 @@ address {
 }
 @media screen and (min-width: 768px) {
 	.hero {
-		padding-bottom: 108px;
 		background-image: linear-gradient(var(--grey), var(--grey)), url(../images/tablet-bg.jpg);
 	}
 }
@@ -424,7 +423,9 @@ address {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 408px;
-	min-height: 584px;
+	height: 600px;
+	max-height: 90vh;
+	overflow-y: scroll;
 	background-color: #fcfcfc;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
@@ -436,9 +437,9 @@ address {
 		padding: 72px 16px 24px 16px;
 	}
 }
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 400px) {
 	.modal {
-		width: 320px;
+		width: calc(100% - 2 * 15px);
 		padding: 72px 16px 24px 16px;
 	}
 }
@@ -833,9 +834,7 @@ address {
 	flex-direction: column;
 	align-items: center;
 }
-/* .footer-media {
-	margin-left: 120px;
-} */
+
 .titles-footer {
 	color: currentColor;
 	font-weight: 500;
@@ -859,9 +858,7 @@ address {
 	background-color: var(--green-success);
 }
 /* ====Subscribe==== */
-.subscribe {
-	margin-left: 80px;
-}
+
 .form-sbscrb {
 	display: flex;
 	margin-top: 16px;
@@ -977,6 +974,17 @@ address {
 	.footer {
 		padding-top: 100px;
 		padding-bottom: 100px;
+	}
+	.footer-items {
+		justify-content: start;
+		gap: 0;
+		flex-wrap: nowrap;
+	}
+	.subscribe {
+		margin-left: 80px;
+	}
+	.footer-media {
+		margin-left: 120px;
 	}
 }
 
